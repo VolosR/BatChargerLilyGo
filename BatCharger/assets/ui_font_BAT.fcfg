@@ -1,0 +1,16 @@
+{
+  "codename": "BAT",
+  "ttf_path": "\\assets\\batmfa__.ttf",
+  "bin_path": "\\assets\\ui_font_BAT.bin",
+  "c_path": "\\assets\\ui_font_BAT.c",
+  "cfg_path": "\\assets\\ui_font_BAT.fcfg",
+  "size": 24,
+  "bpp": 1,
+  "letters": 0,
+  "ranges": [
+    "0x20-0x7f"
+  ],
+  "symbols": "",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}
