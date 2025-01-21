@@ -46,10 +46,7 @@ int findTargetVoltage(int myVoltage) {
     // Array of target voltages
     int targetVoltages[] = {
         3840, 3856, 3872, 3888, 3904, 3920, 3936, 3952, 3968, 3984, 4000, 4016, 4032, 4048, 4064, 4080,
-        4096, 4112, 4128, 4144, 4160, 4176, 4192, 4208, 4224, 4240, 4256, 4272, 4288, 4304, 4320, 4336,
-        4352, 4368, 4384, 4400, 4416, 4432, 4448, 4464, 4480, 4496, 4512, 4528, 4544, 4560, 4576, 4592,
-        4608
-    };
+        4096, 4112, 4128, 4144, 4160, 4176, 4192, 4208, 4224 };
     int size = sizeof(targetVoltages) / sizeof(targetVoltages[0]);
 
     // Initialize closest value and smallest difference
@@ -144,7 +141,7 @@ void setup() {
    
     PMU.setInputCurrentLimit(1000);
     // Set the charging target voltage, Range:3840 ~ 4608mV ,step:16 mV
-    PMU.setChargeTargetVoltage(4352);
+    PMU.setChargeTargetVoltage(4224);
     // Set the precharge current , Range: 64mA ~ 1024mA ,step:64mA
     PMU.setPrechargeCurr(64);
     // Set the charging current , Range:64~5056mA ,step:64mA
